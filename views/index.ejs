@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rk DataBase</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="text w-full bg-zinc-900 p-10 h-[100vh]">
+        <a href="/read">
+            <h1 class="mb-10 text-3xl text-zinc-600 hover:text-zinc-300 cursor-pointer">All User</h1>
+        </a>
+        <div class="w-full bg-zinc-900 p-10 flex flex-col justify-center items-center">
+            <form action="/create" class="flex flex-col justify-center items-center text-zinc-100" method="post" autocomplete="off">
+                <h1 class="mb-10 text-3xl text-zinc-600 hover:text-zinc-300 cursor-pointer">Create User</h1>
+                <!-- name field -->
+                <input
+                    class="px-5 py-3 border  border-zinc-600 bg-transparent rounded outline-none hover:border-zinc-300 mb-4 active:text-white"
+                    type="text" placeholder="Enter Your Name" required name="name">
+                <!-- email field -->
+                <input
+                    class="px-5 py-3 border  border-zinc-600 bg-transparent rounded outline-none hover:border-zinc-300 text-white"
+                    type="email" placeholder="Enter Your Eamil" required name="email">
+                <!-- img input -->
+                <input
+                    class="px-5 py-3 border  border-zinc-600 bg-transparent rounded outline-none hover:border-zinc-300 mt-4"
+                    type="text" placeholder="Enter Your Eamil" required name="img">
+
+                <!-- submit button -->
+                <button
+                    class="bg-zinc-700 mt-7 px-3 py-2 rounded-xl text-zinc-300 hover:bg-zinc-400 hover:text-zinc-900"
+                    type="submit">Create User</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
